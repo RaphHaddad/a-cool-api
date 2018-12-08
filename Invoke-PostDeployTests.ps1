@@ -20,9 +20,3 @@ Describe "Example API ('$Api') Tests" {
         $result.Content | Should -Not -Be $null
     }
 }
-
-Describe "Test Failure" {
-    It "Should Fail" {
-        $false | Should -Be $true
-    }
-}
