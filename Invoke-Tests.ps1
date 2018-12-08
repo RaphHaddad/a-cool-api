@@ -9,14 +9,12 @@ Describe "Example API ('$Api') Tests" {
     It "Should GET" {
         $result = Invoke-WebRequest -Uri "$Api/api/Cool" `
                                     -Method GET `
-                                    -UseBasicParsing
         $result.Content | Should -Not -Be $null
     }
 
     It "Should POST" {
         $result = Invoke-WebRequest -Uri "$Api/api/Cool" `
                                     -Method POST `
-                                    -UseBasicParsing
         $result.Content | Should -Not -Be $null
     }
 }
