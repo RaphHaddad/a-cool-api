@@ -12,7 +12,7 @@ Install-Module -Name Pester -Force -SkipPublisherCheck
 
 Import-Module Pester
 
-$testResults = Invoke-Pester -Script @{Path = "$ScriptPath\Invoke-PostDeployTests.ps1"; `
+$testResults = Invoke-Pester -Script @{Path = "$ScriptPath\Invoke-Tests.ps1"; `
                                        Parameters = @{Api = $Api}} `
                              -OutputFile Test-Pester.XML -OutputFormat NUnitXML `
                              -PassThru
